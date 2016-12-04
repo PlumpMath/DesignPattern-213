@@ -3,7 +3,7 @@ package com.arun.constant;
 import com.arun.changes.FlyBehaviour;
 
 public abstract class Animal {
-	protected FlyBehaviour fly; // Strategy pattern, separate those which changes
+	protected FlyBehaviour fly; // Strategy pattern, favor composition instead of inheritence
 
 	public abstract void makeSound();
 
