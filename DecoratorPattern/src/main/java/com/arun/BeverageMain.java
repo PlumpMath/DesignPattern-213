@@ -1,16 +1,19 @@
 package com.arun;
 
+import com.arun.Beverage.SizeBeverage;
+
 public class BeverageMain {
 
 	public static void main(String[] args) {
 
-		Beverage horseBlend = new HorseBlend();
+		/*small HorseBlend*/
+		Beverage horseBlend = new HorseBlend(SizeBeverage.MEDIUM);
 		horseBlend = new Soy(horseBlend);
 		horseBlend = new Mocha(horseBlend);
 		horseBlend = new Whip(horseBlend);
 		System.out.println(horseBlend.getDescription() + " = " + horseBlend.cost());
 		
-		Beverage darkRoast = new DarkRoast();
+		Beverage darkRoast = new DarkRoast(SizeBeverage.MEDIUM);
 		darkRoast = new Mocha(darkRoast);
 		darkRoast = new Mocha(darkRoast);
 		darkRoast = new Whip(darkRoast);
