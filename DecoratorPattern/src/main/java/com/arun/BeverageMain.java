@@ -13,7 +13,7 @@ public class BeverageMain {
 		horseBlend = new Whip(horseBlend);
 		System.out.println(horseBlend.getDescription() + " = " + horseBlend.cost());
 		
-		/*Medium DarkRoast*/
+		/*Medium DarkRoast */
 		Beverage darkRoast = new DarkRoast(SizeBeverage.MEDIUM);
 		darkRoast = new Mocha(darkRoast);
 		darkRoast = new Mocha(darkRoast);
