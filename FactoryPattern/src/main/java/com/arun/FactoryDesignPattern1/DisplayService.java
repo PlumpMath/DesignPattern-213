@@ -2,7 +2,7 @@ package com.arun.FactoryDesignPattern1;
 
 public abstract class DisplayService {
 	/*
-	 * Factory pattern encapsulates object creation by letting the subclass
+	 * Factory Method Pattern encapsulates object creation by letting the subclass
 	 * decide which object to create
 	 */
 	public void readAFile() {
