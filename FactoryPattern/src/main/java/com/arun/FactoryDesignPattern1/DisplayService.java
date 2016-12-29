@@ -2,15 +2,15 @@ package com.arun.FactoryDesignPattern1;
 
 public abstract class DisplayService {
 	/*
-	 * Factory Method Pattern encapsulates object creation by letting the subclass
-	 * decide which object to create
+	 * Factory Method Pattern encapsulates object creation by letting the
+	 * subclass decide which object to create
 	 */
 	public void readAFile() {
 		FormatOfFile file = createAFile();
 		file.readAFile();
 	}
 
-	public abstract FormatOfFile createAFile(); // Factory pattern
+	protected abstract FormatOfFile createAFile(); // Factory pattern
 
 }
 
@@ -37,6 +37,15 @@ class TextCreator extends DisplayService {
 	@Override
 	public FormatOfFile createAFile() {
 		return new TextFile();
+	}
+
+}
+
+class AdobeCreator extends DisplayService {
+
+	@Override
+	public FormatOfFile createAFile() {
+		return new AdobeReaderFile();
 	}
 
 }

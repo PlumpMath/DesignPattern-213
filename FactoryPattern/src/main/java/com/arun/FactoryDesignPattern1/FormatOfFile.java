@@ -25,3 +25,11 @@ class XMLFile implements FormatOfFile {
 	}
 
 }
+
+class AdobeReaderFile implements FormatOfFile{
+
+	public void readAFile() {
+		System.out.println("Reading an Adobe reader file");
+	}
+	
+}

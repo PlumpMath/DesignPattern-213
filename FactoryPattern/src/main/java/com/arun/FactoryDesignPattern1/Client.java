@@ -10,6 +10,10 @@ public class Client {
 		
 		ds = new XMLCreator();
 		ds.readAFile();
+		
+		ds = new AdobeCreator();
+		ds.readAFile();
+		
 	}
 
 }
