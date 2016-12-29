@@ -1,4 +1,4 @@
-package com.arun.AbstractFactoryDesignPattern;
+package com.arun.FactoryDesignPattern;
 
 public abstract class PizzaStore {
 

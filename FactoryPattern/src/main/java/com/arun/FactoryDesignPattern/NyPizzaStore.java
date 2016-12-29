@@ -1,4 +1,4 @@
-package com.arun.AbstractFactoryDesignPattern;
+package com.arun.FactoryDesignPattern;
 
 public class NyPizzaStore extends PizzaStore {
 
