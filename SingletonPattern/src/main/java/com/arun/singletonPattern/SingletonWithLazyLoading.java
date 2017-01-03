@@ -10,7 +10,7 @@ public class SingletonWithLazyLoading {
 
 	}
 
-	public SingletonWithLazyLoading getInstance() {
+	public static SingletonWithLazyLoading getInstance() {
 		if (INSTANCE == null) {
 			synchronized (SingletonWithLazyLoading.class) {
 				if (INSTANCE == null) {

@@ -3,7 +3,6 @@ package com.arun.singletonPattern;
 public class BillPughSingleton {
 
 	private BillPughSingleton() {
-
 	}
 
 	private static class SingletonHelper {

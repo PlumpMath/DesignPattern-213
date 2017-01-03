@@ -15,7 +15,7 @@ public class SingletonPatternStaticBlockInitialization {
 		}
 	}
 
-	public SingletonPatternStaticBlockInitialization getInstance() {
+	public static SingletonPatternStaticBlockInitialization getInstance() {
 		return INSTANCE;
 	}
 }
