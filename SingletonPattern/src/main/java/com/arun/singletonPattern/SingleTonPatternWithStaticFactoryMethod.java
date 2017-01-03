@@ -7,7 +7,7 @@ public class SingleTonPatternWithStaticFactoryMethod {
 	private SingleTonPatternWithStaticFactoryMethod() {
 	}
 
-	public SingleTonPatternWithStaticFactoryMethod getInstance() {
+	public static SingleTonPatternWithStaticFactoryMethod getInstance() {
 		return INSTANCE;
 	}
 }
