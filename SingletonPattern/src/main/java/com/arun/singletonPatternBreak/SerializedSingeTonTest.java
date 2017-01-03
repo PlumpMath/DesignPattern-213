@@ -11,7 +11,6 @@ import com.arun.singletonPattern.SerializedSingleton;
 
 public class SerializedSingeTonTest {
 
-
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		SerializedSingleton instanceOne = SerializedSingleton.getInstance();
 
@@ -27,13 +26,15 @@ public class SerializedSingeTonTest {
 
 		System.out.println(instanceOne.hashCode());
 		System.out.println(instanceTwo.hashCode());
-		
-		/*o/p
-		
-		865113938
-		245257410*/
+
+		/*
+		 * o/p
+		 * 
+		 * 865113938 245257410, we get the below o/p if we dont use the Object
+		 * readResolve() method, if readResolve method is used, the o/p will be
+		 * the same.
+		 */
 
 	}
-
 
 }

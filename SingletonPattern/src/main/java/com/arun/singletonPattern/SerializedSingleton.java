@@ -20,6 +20,12 @@ public class SerializedSingleton implements Serializable {
 		return Helper.instance;
 	}
 
+	/*
+	 * To resolve the issue of breaking serialization, if the below code is not
+	 * there hashcode returned will be different
+	 */
+	public Object readResolve() {
+		return SerializedSingleton.getInstance();
+	}
+
 }
-
-
