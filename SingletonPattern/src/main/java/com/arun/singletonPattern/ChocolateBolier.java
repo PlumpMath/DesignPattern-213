@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 public class ChocolateBolier {
 	private boolean empty;
 	private boolean boiled;
-	private static ChocolateBolier instance;
+	private volatile static ChocolateBolier instance;
 
 	private ChocolateBolier() {
 		this.empty = true;
